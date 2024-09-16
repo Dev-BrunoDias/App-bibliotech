@@ -4,12 +4,19 @@
   width: 50vw;
   justify-content: center;
 }
+
+.container{
+  margin: 0;
+}
+
 .form-container{
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 79vh;
+  padding-top: 105px;
 }
+
 .form-container h1{
     font-size: 30px;
     font-weight: 600;
@@ -27,4 +34,10 @@
 .btn-form{
   width: 48%;
   transition: 0.4s;
+}
+
+p{
+  font-size: 13px;
+  color: grey;
+  margin-bottom: 30px;
 }

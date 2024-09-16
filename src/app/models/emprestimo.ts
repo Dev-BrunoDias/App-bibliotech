@@ -9,7 +9,7 @@ export interface Emprestimo{
     autor: string,
     capa: string,
     categoria: string,
-    id: string,
+    id?: string,
     isbn: string,
     titulo: string
   };

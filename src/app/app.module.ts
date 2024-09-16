@@ -21,6 +21,8 @@ import { LivrosComponent } from './views/livros/livros.component';
 import { DetailsComponent } from './componente/details/details.component';
 import { AdicionarLivroComponent } from './views/adicionar-livro/adicionar-livro.component';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { SemCapaPipe } from './pipes/sem-capa.pipe';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     NovoCadastroComponent,
     LivrosComponent,
     DetailsComponent,
-    AdicionarLivroComponent
+    AdicionarLivroComponent,
+    SemCapaPipe
    ],
   imports: [
     BrowserModule,
@@ -47,7 +50,10 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     ReactiveFormsModule,
     FormsModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters: false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
